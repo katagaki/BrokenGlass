@@ -1,0 +1,258 @@
+:root {
+  --accent-color: rgb(0, 122, 255);
+  --accent-color-hover: rgb(30, 152, 255);
+  --accent-color-pressed: rgb(0, 102, 235);
+  --destructive-color: rgb(255, 59, 48);
+  --destructive-color-hover: rgb(255, 99, 78);
+  --destructive-color-pressed: rgb(225, 19, 18);
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+	background-color: #F2F2F7;
+	margin: 0px;
+}
+
+h1 {
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
+	font: -apple-system-title0;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	padding-top: 50px;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+	position: sticky;
+	top: 0;
+}
+
+h2 {
+	font: -apple-system-headline;
+	margin: 0px;
+	margin-top: 16px;
+	margin-bottom: -14px;
+	margin-left: 20px;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+p, b {
+	/* font-size: 0.875rem; */
+	font: -apple-system-body;
+	margin: 0px;
+	overflow-wrap: break-word;
+}
+
+b {
+	font: -apple-system-body;
+	font-weight: bold;
+	margin: 0px;
+	overflow-wrap: break-word;
+}
+
+a {
+	color: var(--accent-color);
+	font: -apple-system-body;
+    text-decoration: none;
+    cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+a:hover {
+	color: var(--accent-color-hover);
+}
+
+a:active {
+	color: var(--accent-color-pressed);
+}
+
+input[type="text"], input[type="password"] {
+	border: none;
+	font: -apple-system-body;
+	min-width: 100px;
+	flex-grow: 1;
+}
+
+input[type="submit"] {
+    font-weight: unset;
+}
+
+.borderedProminentButton {
+	background-color: var(--accent-color);
+	color: white;
+	font: -apple-system-body;
+	border: none;
+	text-align: center;
+	padding: 4px 16px;
+	border-radius: 48px;
+}
+
+.borderedProminentButton:hover {
+	background-color: var(--accent-color-hover);
+}
+
+.borderedProminentButton:active {
+	background-color: var(--accent-color-pressed);
+}
+
+.plainButton {
+    background-color: unset;
+    color: unset;
+    padding: 0px;
+	border: none;
+}
+
+.plainButton:hover {
+    filter: brightness(150%);
+}
+
+.plainButton:active {
+    filter: brightness(70%);
+}
+
+label {
+	font: -apple-system-body;
+	margin-right: 8px;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+span {
+    flex-grow: 1;
+}
+
+hr {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin: 0px -20px 0px 0px;
+}
+
+.navButton {
+    background-color: unset;
+	color: var(--accent-color);
+	border: none;
+	font: -apple-system-body;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0px;
+	position: fixed;
+	top: 16px;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.navButton:hover {
+	color: var(--accent-color-hover);
+}
+
+.navButton:active {
+	color: var(--accent-color-pressed);
+}
+
+.navLabel {
+	color: gray;
+	font: -apple-system-body;
+	font-weight: semibold;
+	text-decoration: none;
+	position: fixed;
+	top: 20px;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.topLeading {
+	left: 20px;
+}
+
+.topTrailing {
+	right: 20px;
+}
+
+.groupContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 20px;
+}
+
+.groupBox {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	gap: 10px;
+	background-color: white;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
+.horizontalStackCenterAlign {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.horizontalStackTopAlign {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: top;
+}
+
+.verticalStack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: topLeading;
+}
+
+.dividerFullWidth {
+    margin: 0px -20px!important;
+}
+
+.button {
+    background-color: unset;
+	color: var(--accent-color);
+	border: none;
+	font: -apple-system-body;
+}
+
+.button:hover {
+	color: var(--accent-color-hover);
+}
+
+.button:active {
+	color: var(--accent-color-pressed);
+}
+
+.secondary {
+    color: gray;
+}
+
+.destructive {
+    color: var(--destructive-color)!important;
+}
+
+.destructive:hover {
+    color: var(--destructive-color-hover)!important;
+}
+
+.destructive:active {
+    color: var(--destructive-color-pressed)!important;
+}
