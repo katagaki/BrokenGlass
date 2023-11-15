@@ -8,5 +8,19 @@
 <body>
     <h1>マイページ</h1>
     <a href="{{url_for('logout')}}" class="navButton topLeading destructive">サインアウト</a>
+	<div class="groupContainer">
+		<div class="groupBox">
+			<b>{{profile.name}}様、ようこそ</b>
+			<hr>
+			<p>最後サインイン：{{profile.lastSignIn}}</p>
+		</div>
+		<div class="groupBox">
+			<a href="/mypage/passwordreset">パスワードをリセット</a>
+		</div>
+		<h2>LLMセンター</h2>
+		<div class="groupBox">
+			<a href="/mypage/matome">まとめツール</a>
+		</div>
+	</div>
 </body>
 </html>

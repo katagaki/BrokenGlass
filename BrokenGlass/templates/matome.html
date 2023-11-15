@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="/matome.js" defer></script>
+    <title>BrokenGlass</title>
+</head>
+<body>
+    <h1>まとめ</h1>
+	<div onclick="history.back();" class="navButton topLeading">戻る</div>
+	<div class="groupContainer">
+		<h2 id="upload-button-title">アップロード</h2>
+		<div class="groupBox" id="upload-button-section">
+	  		<input type="file" name="file" id="file-selector" accept=".pdf" hidden />
+			<label for="file-selector" class="button" style="padding-top: 2px; padding-bottom: 3px; text-align: center;">ファイルを選択</label>
+		</div>
+		<div class="groupBox" id="matomeru-button-section">
+	  		<button id="matomeru-button" class="button">まとめる</button>
+		</div>
+		<h2 id="matome-title" hidden>ドキュメント概要</h2>
+		<div id="matome-section" class="groupBox" hidden>
+			<p id="streamed-response">まとめた内容はこちらに表示されます。</p>
+		</div>
+	</div>
+</body>
+</html>
